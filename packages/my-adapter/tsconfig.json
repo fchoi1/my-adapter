@@ -1,0 +1,22 @@
+{
+  "extends": "@next-auth/tsconfig/tsconfig.base.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": ".",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "isolatedModules": true,
+    "target": "ES2018", // Changed from "ESNext" to "ES2018"
+    "module": "CommonJS", // Changed from "ES6" to "CommonJS"
+    "moduleResolution": "node",
+    "outDir": ".",
+    "rootDir": "src",
+    "skipDefaultLibCheck": true,
+    "strictNullChecks": true,
+    "stripInternal": true,
+    "declarationMap": true,
+    "declaration": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["*.js", "*.d.ts"]
+}
