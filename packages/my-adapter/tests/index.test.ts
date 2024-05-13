@@ -22,11 +22,6 @@ const renameAccountKeys = (account: any) => {
 }
 
 const processData = (model: any) => {
-  // if (model.createdAt && model.updatedAt) {
-  //   model.createdAt = new Date(model.createdAt)
-  //   model.updatedAt = new Date(model.updatedAt)
-  // }
-
   delete model.createdAt
   delete model.createdBy
   delete model.updatedAt
@@ -35,6 +30,14 @@ const processData = (model: any) => {
   if ("fullName" in model) {
     delete model.fullName
   }
+
+  // if ("firstName" in model) {
+  //   delete model.firstName
+  // }
+
+  // if ("lastName" in model) {
+  //   delete model.lastName
+  // }
 
   if ("password" in model) {
     delete model.password

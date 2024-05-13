@@ -1,4 +1,4 @@
-import type { Adapter } from "@auth/core/adapters"
+import type { Adapter } from "../core/src/adapters"
 import { createHash, randomUUID } from "crypto"
 
 const requiredMethods = [

@@ -137,7 +137,7 @@ export default function MyAdapter(): Adapter {
       }
     },
 
-    async updateUser(user: string) {
+    async updateUser(user: User) {
       try {
         const updatedUser = await fetch(`${apiUrl}/api/user/${user.id}`, {
           ...fetchOptions,
